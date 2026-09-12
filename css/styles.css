@@ -1,6 +1,6 @@
 /* ==========================================================================
    MONMOUTH HEATING, AIR CONDITIONING & DRAIN CLEANING, LLC
-   Clean Master Stylesheet
+   Clean Master Stylesheet (With Reviews)
    ========================================================================== */
 
 :root {
@@ -574,6 +574,91 @@ img {
     color: var(--color-text-muted);
 }
 
+/* Customer Reviews Section */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.review-card {
+    background: var(--color-navy-card);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 14px;
+}
+
+.reviewer-avatar {
+    width: 46px;
+    height: 46px;
+    background: var(--color-flame);
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.reviewer-name {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 2px;
+}
+
+.reviewer-meta {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+}
+
+.review-card .stars {
+    margin-bottom: 14px;
+}
+
+.review-body {
+    font-size: 0.94rem;
+    color: #cbd5e1;
+    line-height: 1.65;
+    margin-bottom: 20px;
+}
+
+.review-highlights {
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    color: #34d399;
+    padding: 8px 12px;
+    border-radius: var(--radius-sm);
+    font-size: 0.82rem;
+    margin-bottom: 14px;
+}
+
+.review-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.review-tags span {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.78rem;
+    color: var(--color-emerald);
+
+}
+
 /* Contact & Web3Forms */
 .contact-card {
     display: grid;
@@ -593,7 +678,6 @@ img {
 .contact-info p {
     font-size: 0.95rem;
     margin-bottom: 12px;
-
 }
 
 .contact-info p i {
