@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monmouth Heating, Air Conditioning & Drain Cleaning, LLC | (732) 775-4693</title>
+    <meta name="description" content="Monmouth Heating, Air Conditioning & Drain Cleaning, LLC. Open 24 Hours. 5.0 Stars (35 Reviews). Serving Marlboro & Long Branch. Call (732) 775-4693.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-flex">
+            <div class="top-info">
+                <span class="badge-tag"><i class="fa-solid fa-clock"></i> Open 24 Hours</span>
+                <span class="top-text">Same-day, weekend, and holiday emergency response</span>
+            </div>
+            <div class="top-contact">
+                <span class="rating-inline"><i class="fa-solid fa-star"></i> 5.0 Stars (35 Reviews)</span>
+                <a href="tel:7327754693" class="top-phone"><i class="fa-solid fa-phone"></i> (732) 775-4693</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo-wrap">
+                <img src="assets/images/logo.png" alt="Monmouth Heating, Air Conditioning & Drain Cleaning, LLC Logo" class="brand-logo-img">
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#hvac" class="nav-link">HVAC Services</a>
+                <a href="#plumbing" class="nav-link">Plumbing & Drain</a>
+                <a href="#personnel" class="nav-link">Key Personnel</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn btn-secondary nav-btn" onclick="openModal()">Request Service</button>
+                <a href="tel:7327754693" class="btn btn-primary nav-call">
+                    <i class="fa-solid fa-phone"></i> (732) 775-4693
+                </a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="about">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <div class="rating-badge">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span><strong>5.0 Stars</strong> (Based on 35 Reviews)</span>
+                </div>
+
+                <h1 class="hero-title">
+                    Monmouth Heating, Air Conditioning & Drain Cleaning, LLC
+                </h1>
+
+                <p class="hero-desc">
+                    Providing expert HVAC, plumbing, and drain cleaning services. We offer same-day, weekend, and holiday emergency response with upfront pricing and complete clean-up services following major utility excavations.
+                </p>
+
+                <div class="info-chips">
+                    <span class="chip"><i class="fa-solid fa-clock"></i> Open 24 Hours</span>
+                    <span class="chip"><i class="fa-solid fa-tag"></i> Upfront Pricing</span>
+                    <span class="chip"><i class="fa-solid fa-location-dot"></i> Marlboro & Long Branch</span>
+                    <span class="chip"><i class="fa-solid fa-broom"></i> Post-Excavation Clean-Up</span>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="tel:7327754693" class="btn btn-primary btn-lg">
+                        <i class="fa-solid fa-phone"></i> Call (732) 775-4693
+                    </a>
+                    <button class="btn btn-outline btn-lg" onclick="openModal()">
+                        <i class="fa-solid fa-envelope"></i> Send Web3Forms Message
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-image-card">
+                <img src="assets/images/ac_service.jpg" alt="Monmouth Technician servicing outdoor A/C condensing unit" class="featured-photo">
+                <div class="photo-caption">
+                    <i class="fa-solid fa-circle-check"></i> Real Monmouth Heating, Air Conditioning & Drain Cleaning Technician on the job
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Characteristics Banner -->
+    <section class="char-banner">
+        <div class="container char-grid">
+            <div class="char-item">
+                <div class="char-icon"><i class="fa-solid fa-bolt"></i></div>
+                <div>
+                    <h3>Emergency Response</h3>
+                    <p>Same-day, weekend, and holiday emergency response available when you need us most.</p>
+                </div>
+            </div>
+
+            <div class="char-item">
+                <div class="char-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                <div>
+                    <h3>Upfront Pricing</h3>
+                    <p>Clear, upfront pricing with no hidden surprises before any work begins.</p>
+                </div>
+            </div>
+
+            <div class="char-item">
+                <div class="char-icon"><i class="fa-solid fa-broom"></i></div>
+                <div>
+                    <h3>Excavation Clean-Up</h3>
+                    <p>Thorough clean-up services following major utility excavations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HVAC Services Section -->
+    <section class="services-section section-padding" id="hvac">
+        <div class="container">
+            <div class="section-heading text-center">
+                <span class="sub-heading">Residential & Commercial</span>
+                <h2>HVAC Services</h2>
+            </div>
+
+            <div class="services-split">
+                <div class="service-cards-list">
+                    <div class="s-card">
+                        <div class="s-icon"><i class="fa-solid fa-snowflake"></i></div>
+                        <div>
+                            <h3>Central A/C & Heating Installation, Replacement & Maintenance</h3>
+                            <p>Full installation, replacement, and routine maintenance for central air conditioning and heating systems.</p>
+                        </div>
+                    </div>
+
+                    <div class="s-card">
+                        <div class="s-icon"><i class="fa-solid fa-plug"></i></div>
+                        <div>
+                            <h3>AC Rewiring & New Line Installation</h3>
+                            <p>Specialized AC rewiring services and new line installations for optimal system performance.</p>
+                        </div>
+                    </div>
+
+                    <div class="s-card">
+                        <div class="s-icon"><i class="fa-solid fa-temperature-half"></i></div>
+                        <div>
+                            <h3>Thermostat Installation</h3>
+                            <p>Professional thermostat installation for accurate climate and temperature control.</p>
+                        </div>
+                    </div>
+
+                    <div class="s-card">
+                        <div class="s-icon"><i class="fa-solid fa-fire"></i></div>
+                        <div>
+                            <h3>Furnace & Humidifier Maintenance</h3>
+                            <p>Complete maintenance services for home heating furnaces and humidifiers.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-side-photo">
+                    <img src="assets/images/furnace_service.png" alt="Monmouth Technician performing furnace maintenance" class="side-photo">
+                    <div class="photo-caption">
+                        <i class="fa-solid fa-wrench"></i> Technician performing indoor furnace maintenance in Monmouth shirt
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plumbing & Drain Services Section -->
+    <section class="services-section section-padding bg-dark" id="plumbing">
+        <div class="container">
+            <div class="section-heading text-center">
+                <span class="sub-heading text-flame">Plumbing & Drain Services</span>
+                <h2 class="text-white">Plumbing & Drain Cleaning</h2>
+            </div>
+
+            <div class="plumbing-grid">
+                <div class="p-card">
+                    <div class="p-icon"><i class="fa-solid fa-trowel-bricks"></i></div>
+                    <h3>Main Sewer Line Excavation & Replacement</h3>
+                    <p>Main sewer line excavation and complete replacement with clean-up services following major utility excavations.</p>
+                </div>
+
+                <div class="p-card">
+                    <div class="p-icon"><i class="fa-solid fa-faucet-drip"></i></div>
+                    <h3>Water Line & Shut-Off Valve Replacement</h3>
+                    <p>Replacement of main water lines and faulty shut-off valves to protect your water supply.</p>
+                </div>
+
+                <div class="p-card">
+                    <div class="p-icon"><i class="fa-solid fa-turn-up"></i></div>
+                    <h3>Main Gate Valve Installation</h3>
+                    <p>Installation of main gate valves for proper plumbing shut-off control.</p>
+                </div>
+
+                <div class="p-card">
+                    <div class="p-icon"><i class="fa-solid fa-bore-hole"></i></div>
+                    <h3>Drain Cleaning</h3>
+                    <p>Thorough drain cleaning services to clear blockages and restore flow.</p>
+                </div>
+
+                <div class="p-card">
+                    <div class="p-icon"><i class="fa-solid fa-sink"></i></div>
+                    <h3>Sink Unclogging</h3>
+                    <p>Fast, effective unclogging for kitchen and bathroom sinks.</p>
+                </div>
+
+                <div class="p-card">
+                    <div class="p-icon"><i class="fa-solid fa-faucet"></i></div>
+                    <h3>Faucet Replacement</h3>
+                    <p>Installation and replacement of kitchen and bathroom faucets.</p>
+                </div>
+
+                <div class="p-card full-span">
+                    <div class="p-icon"><i class="fa-solid fa-toilet"></i></div>
+                    <h3>Toilet Repair (Fill Valves & Flappers)</h3>
+                    <p>Complete toilet repair services, including fill valves and flapper replacements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Personnel & Service Areas -->
+    <section class="info-section section-padding" id="personnel">
+        <div class="container info-two-col">
+            <div class="info-box">
+                <h2>Key Personnel</h2>
+                <p class="info-intro">Our experienced team members:</p>
+                <div class="team-list">
+                    <div class="team-member">
+                        <i class="fa-solid fa-user-check"></i>
+                        <span><strong>Paul</strong></span>
+                    </div>
+                    <div class="team-member">
+                        <i class="fa-solid fa-user-check"></i>
+                        <span><strong>Alex</strong></span>
+                    </div>
+                    <div class="team-member">
+                        <i class="fa-solid fa-user-check"></i>
+                        <span><strong>Anthony</strong></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h2>Service Areas Mentioned</h2>
+                <p class="info-intro">We proudly service:</p>
+                <div class="area-list">
+                    <div class="area-item"><i class="fa-solid fa-location-dot"></i> <strong>Marlboro</strong></div>
+                    <div class="area-item"><i class="fa-solid fa-location-dot"></i> <strong>Long Branch</strong></div>
+                </div>
+                <p class="area-note">Plus surrounding Monmouth County locations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Web3Forms Contact Section -->
+    <section class="contact-section section-padding bg-dark" id="contact">
+        <div class="container">
+            <div class="contact-card">
+                <div class="contact-info">
+                    <h2>Monmouth Heating, Air Conditioning & Drain Cleaning, LLC</h2>
+                    <p class="c-phone"><i class="fa-solid fa-phone"></i> Phone: <a href="tel:7327754693">(732) 775-4693</a></p>
+                    <p><i class="fa-solid fa-clock"></i> Hours: Open 24 hours</p>
+                    <p><i class="fa-solid fa-star"></i> Rating: 5.0 stars (based on 35 reviews)</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Service Areas: Marlboro, Long Branch</p>
+                    <p><i class="fa-solid fa-users"></i> Key Personnel: Paul, Alex, Anthony</p>
+
+                    <div class="direct-call-box">
+                        <h3>Need Emergency Service?</h3>
+                        <p>We offer same-day, weekend, and holiday emergency response.</p>
+                        <a href="tel:7327754693" class="btn btn-emerald btn-lg">
+                            <i class="fa-solid fa-phone-flip"></i> Call (732) 775-4693 Now
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrap">
+                    <h3>Send a Message (Web3Forms)</h3>
+                    <p>Fill out the form below to request upfront service information.</p>
+
+                    <form action="https://api.web3forms.com/submit" method="POST" class="web3form" id="web3Form" onsubmit="handleFormSubmit(event)">
+                        <!-- Web3Forms Access Key input field -->
+                        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" id="web3formsKey">
+                        <input type="hidden" name="subject" value="Service Request - Monmouth Heating, Air Conditioning & Drain Cleaning, LLC">
+
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required class="form-control" placeholder="Your Name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required class="form-control" placeholder="(732) 775-4693">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service" class="form-control">
+                                <option value="HVAC - Central AC / Heating">Central A/C and Heating System</option>
+                                <option value="HVAC - AC Rewiring">AC Rewiring and New Line Installation</option>
+                                <option value="HVAC - Thermostat Installation">Thermostat Installation</option>
+                                <option value="HVAC - Furnace Maintenance">Furnace and Humidifier Maintenance</option>
+                                <option value="Plumbing - Main Sewer Excavation">Main Sewer Line Excavation & Replacement</option>
+                                <option value="Plumbing - Water Line / Valve">Water Line & Shut-Off Valve Replacement</option>
+                                <option value="Plumbing - Main Gate Valve">Main Gate Valve Installation</option>
+                                <option value="Plumbing - Drain Cleaning">Drain Cleaning & Sink Unclogging</option>
+                                <option value="Plumbing - Faucet Replacement">Faucet Replacement</option>
+                                <option value="Plumbing - Toilet Repair">Toilet Repair (Fill Valves & Flappers)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message / Details</label>
+                            <textarea id="message" name="message" rows="3" class="form-control" placeholder="Describe what you need..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                            <i class="fa-solid fa-paper-plane"></i> Submit Form
+                        </button>
+                    </form>
+                    <div id="formStatus" class="form-status"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Form overlay -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-card">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <h3>Request Service</h3>
+            <p>Monmouth Heating, Air Conditioning & Drain Cleaning, LLC</p>
+            <p><strong>Phone:</strong> (732) 775-4693 | Open 24 Hours</p>
+            <div class="modal-cta">
+                <a href="tel:7327754693" class="btn btn-emerald btn-block"><i class="fa-solid fa-phone"></i> Call (732) 775-4693</a>
+                <a href="#contact" onclick="closeModal()" class="btn btn-primary btn-block"><i class="fa-solid fa-envelope"></i> Go to Contact Form</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container text-center">
+            <img src="assets/images/logo.png" alt="Monmouth Logo" class="footer-logo">
+            <p class="footer-title">Monmouth Heating, Air Conditioning & Drain Cleaning, LLC</p>
+            <p>Phone: <strong>(732) 775-4693</strong> | Hours: <strong>Open 24 hours</strong> | Rating: <strong>5.0 stars (35 reviews)</strong></p>
+            <p>Service Areas Mentioned: Marlboro, Long Branch | Key Personnel: Paul, Alex, Anthony</p>
+            <p class="copyright">&copy; <span id="year">2026</span> Monmouth Heating, Air Conditioning & Drain Cleaning, LLC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
