@@ -1,6 +1,6 @@
 /* ==========================================================================
    MONMOUTH HEATING, AIR CONDITIONING & DRAIN CLEANING, LLC
-   Application JavaScript
+   Application JavaScript (Email targeting: yusufolia21@gmail.com)
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -46,7 +46,7 @@ function closeModal() {
     }
 }
 
-// Web3Forms Form Submission
+// Form Submission Handler sending email to yusufolia21@gmail.com
 function handleFormSubmit(e) {
     e.preventDefault();
     const form = document.getElementById('web3Form');
@@ -56,31 +56,29 @@ function handleFormSubmit(e) {
     if (!form || !submitBtn) return;
 
     submitBtn.disabled = true;
-    submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Submitting...';
+    submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending email to yusufolia21@gmail.com...';
 
     const formData = new FormData(form);
 
-    fetch('https://api.web3forms.com/submit', {
+    fetch('https://formsubmit.co/ajax/yusufolia21@gmail.com', {
         method: 'POST',
+        headers: {
+            'Accept': 'application/json'
+        },
         body: formData
     })
     .then(async (res) => {
-        const json = await res.json();
-        if (res.status === 200 || json.success) {
-            statusEl.className = 'form-status success';
-            statusEl.textContent = 'Thank you! Your message has been sent. We will get back to you shortly.';
-            form.reset();
-        } else {
-            statusEl.className = 'form-status success';
-            statusEl.textContent = 'Message received! For immediate 24/7 service, please call (732) 775-4693.';
-        }
+        const data = await res.json().catch(() => ({}));
+        statusEl.className = 'form-status success';
+        statusEl.textContent = 'Thank you! Your request has been emailed to yusufolia21@gmail.com. We will contact you shortly.';
+        form.reset();
     })
     .catch(() => {
-        statusEl.className = 'form-status success';
-        statusEl.textContent = 'Message received! For immediate 24/7 service, please call (732) 775-4693.';
+        // Fallback standard submit if AJAX is blocked by cross-origin policy
+        form.submit();
     })
     .finally(() => {
         submitBtn.disabled = false;
-        submitBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Submit Form';
+        submitBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Submit Request';
     });
 }

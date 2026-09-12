@@ -95,7 +95,7 @@
                         <i class="fa-solid fa-phone"></i> Call (732) 775-4693
                     </a>
                     <button class="btn btn-outline btn-lg" onclick="openModal()">
-                        <i class="fa-solid fa-envelope"></i> Send Web3Forms Message
+                        <i class="fa-solid fa-envelope"></i> Request Online Service
                     </button>
                 </div>
             </div>
@@ -279,7 +279,7 @@
         </div>
     </section>
 
-    <!-- Web3Forms Contact Section -->
+    <!-- Contact Section Configured for yusufolia21@gmail.com -->
     <section class="contact-section section-padding bg-dark" id="contact">
         <div class="container">
             <div class="contact-card">
@@ -301,27 +301,30 @@
                 </div>
 
                 <div class="contact-form-wrap">
-                    <h3>Send a Message (Web3Forms)</h3>
-                    <p>Fill out the form below to request upfront service information.</p>
+                    <h3>Send a Service Request</h3>
+                    <p>Submissions will be emailed directly to <strong>yusufolia21@gmail.com</strong>.</p>
 
-                    <form action="https://api.web3forms.com/submit" method="POST" class="web3form" id="web3Form" onsubmit="handleFormSubmit(event)">
-                        <!-- Web3Forms Access Key input field -->
-                        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" id="web3formsKey">
-                        <input type="hidden" name="subject" value="Service Request - Monmouth Heating, Air Conditioning & Drain Cleaning, LLC">
+                    <!-- Form configured for direct delivery to yusufolia21@gmail.com -->
+                    <form action="https://formsubmit.co/yusufolia21@gmail.com" method="POST" class="web3form" id="web3Form" onsubmit="handleFormSubmit(event)">
+                        <!-- Form submit options for yusufolia21@gmail.com -->
+                        <input type="hidden" name="_to" value="yusufolia21@gmail.com">
+                        <input type="hidden" name="_subject" value="New Service Request - Monmouth Heating, Air Conditioning & Drain Cleaning, LLC">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
 
                         <div class="form-group">
                             <label for="name">Name *</label>
-                            <input type="text" id="name" name="name" required class="form-control" placeholder="Your Name">
+                            <input type="text" id="name" name="Name" required class="form-control" placeholder="Your Name">
                         </div>
 
                         <div class="form-group">
                             <label for="phone">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" required class="form-control" placeholder="(732) 775-4693">
+                            <input type="tel" id="phone" name="Phone" required class="form-control" placeholder="(732) 775-4693">
                         </div>
 
                         <div class="form-group">
                             <label for="service">Service Needed</label>
-                            <select id="service" name="service" class="form-control">
+                            <select id="service" name="Service Needed" class="form-control">
                                 <option value="HVAC - Central AC / Heating">Central A/C and Heating System</option>
                                 <option value="HVAC - AC Rewiring">AC Rewiring and New Line Installation</option>
                                 <option value="HVAC - Thermostat Installation">Thermostat Installation</option>
@@ -337,11 +340,11 @@
 
                         <div class="form-group">
                             <label for="message">Message / Details</label>
-                            <textarea id="message" name="message" rows="3" class="form-control" placeholder="Describe what you need..."></textarea>
+                            <textarea id="message" name="Details" rows="3" class="form-control" placeholder="Describe what you need..."></textarea>
                         </div>
 
                         <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
-                            <i class="fa-solid fa-paper-plane"></i> Submit Form
+                            <i class="fa-solid fa-paper-plane"></i> Submit Request
                         </button>
                     </form>
                     <div id="formStatus" class="form-status"></div>
@@ -356,6 +359,7 @@
             <button class="modal-close" onclick="closeModal()">&times;</button>
             <h3>Request Service</h3>
             <p>Monmouth Heating, Air Conditioning & Drain Cleaning, LLC</p>
+            <p>Submissions email directly to: <strong>yusufolia21@gmail.com</strong></p>
             <p><strong>Phone:</strong> (732) 775-4693 | Open 24 Hours</p>
             <div class="modal-cta">
                 <a href="tel:7327754693" class="btn btn-emerald btn-block"><i class="fa-solid fa-phone"></i> Call (732) 775-4693</a>
