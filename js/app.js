@@ -1,6 +1,6 @@
 /* ==========================================================================
    MONMOUTH HEATING, AIR CONDITIONING & DRAIN CLEANING, LLC
-   Application JavaScript (Email targeting: yusufolia21@gmail.com)
+   Application JavaScript
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -46,7 +46,7 @@ function closeModal() {
     }
 }
 
-// Form Submission Handler sending email to yusufolia21@gmail.com
+// Form Submission Handler
 function handleFormSubmit(e) {
     e.preventDefault();
     const form = document.getElementById('web3Form');
@@ -56,7 +56,7 @@ function handleFormSubmit(e) {
     if (!form || !submitBtn) return;
 
     submitBtn.disabled = true;
-    submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending email to yusufolia21@gmail.com...';
+    submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Submitting...';
 
     const formData = new FormData(form);
 
@@ -68,13 +68,12 @@ function handleFormSubmit(e) {
         body: formData
     })
     .then(async (res) => {
-        const data = await res.json().catch(() => ({}));
         statusEl.className = 'form-status success';
-        statusEl.textContent = 'Thank you! Your request has been emailed to yusufolia21@gmail.com. We will contact you shortly.';
+        statusEl.textContent = 'Thank you! Your request has been submitted. We will contact you shortly.';
         form.reset();
     })
     .catch(() => {
-        // Fallback standard submit if AJAX is blocked by cross-origin policy
+        // Fallback standard submit if AJAX is blocked by browser rules
         form.submit();
     })
     .finally(() => {
